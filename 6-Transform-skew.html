@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio con transform skew</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 200px;
+            gap:  10px ;
+        }
+        .one{
+            background-color: blue;
+            height: 300px;
+            width: 300px;
+            border-radius: 20%;
+        }
+        .one:hover{
+            transform: skew(20deg);
+        }
+        .two{
+            background-color: gold;
+            height: 300px;
+            width: 300px;
+            border-radius: 20%;
+        }
+        .two:hover{
+            transform: skew(40deg);
+        }
+        .three{
+            background-color: gray;
+            height: 300px;
+            width: 300px;
+            border-radius: 20%;
+        }
+        .three:hover{
+            transform: skew(60deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</body>
+</html>
