@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio con Transform  and translate </title>
+  <style>
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .background-one{
+  background-color: brown;
+  height: 400px;
+  width: 740px;
+}
+
+.background-two{
+  background-color: cadetblue;
+    height: 300px;
+    width: 740px;
+}
+
+.circle{
+  width: 300px;
+  height: 280px;
+  background:-webkit-linear-gradient(90deg, #4c00ff 0%, #00ff00 80%);
+  background:-o-linear-gradient(90deg, #4c00ff 0%, #00ff00 80%);
+  background:-moz-linear-gradient(90deg, #4c00ff 0%, #00ff00 80%);
+  background:linear-gradient(90deg, #4c00ff 0%, #00ff00 80%);
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.circle:hover{
+  transform: translate(150px, 110px);
+}
+  </style>
+</head>
+<body>
+  <div class="background-one">
+    <div class="background-two">
+  <div class="shadow">
+      <div class="circle"></div>
+  </div>
+    </div>
+  </div>
+</body>
+</html>
