@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio con Backvisibility</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+  }
+
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 200px;
+            gap: 10px;
+}
+
+.card{
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+}
+
+.card:hover{
+  transform: rotateY(180deg);
+}
+
+.face{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.face.front{
+  background-color: darkgreen;
+}
+
+.face.back{
+  background-color: lightseagreen;
+  transform: rotateY(180deg);
+}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="face front"></div>
+        <div class="face back"></div>
+        </div>
+</body>
+</html>
